@@ -14,7 +14,7 @@ for url_file in url_files:
     urls_for_next_test[url_file] = []
     urls_counter[url_file] = {"S":0,"F":0}
     with file("url\\" + url_file,"r") as url_read:
-        url_list = url_read.readlines()[4:]
+        url_list = url_read.readlines()
         url_list_fixed = []
         for i in url_list:
             i = i.strip("\n")
